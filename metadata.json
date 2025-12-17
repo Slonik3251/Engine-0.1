@@ -1,0 +1,7 @@
+{
+  "name": "Smart Flow Engine (SFE)",
+  "description": "An advanced traffic management and analysis platform featuring an interactive map, real-time flow monitoring, and AI-driven crossroad optimization.",
+  "requestFramePermissions": [
+    "geolocation"
+  ]
+}
