@@ -1,7 +1,8 @@
 
-import { Crossroad, User } from './types';
+// Import Crossroad type to ensure correct property types for constants
+import { Crossroad } from './types';
 
-export const MOCK_USER: User = {
+export const MOCK_USER = {
   id: '000001',
   name: 'Максим',
   surname: 'Гребенев',
@@ -9,6 +10,7 @@ export const MOCK_USER: User = {
   phone: '8 (951) 781-97-31'
 };
 
+// Explicitly type the array to [number, number] tuple for coordinates
 export const INITIAL_CROSSROADS: Crossroad[] = [
   {
     id: '1',
@@ -20,9 +22,7 @@ export const INITIAL_CROSSROADS: Crossroad[] = [
     ],
     roads: [
       { id: 'r1', name: 'пр. Ленина (сев)', carCount: 210, pedestrianCount: 45 },
-      { id: 'r2', name: 'ул. Грязнова (вост)', carCount: 130, pedestrianCount: 20 },
-      { id: 'r3', name: 'пр. Ленина (юг)', carCount: 190, pedestrianCount: 55 },
-      { id: 'r4', name: 'ул. Грязнова (зап)', carCount: 115, pedestrianCount: 18 }
+      { id: 'r2', name: 'ул. Грязнова (вост)', carCount: 130, pedestrianCount: 20 }
     ]
   },
   {
@@ -34,21 +34,7 @@ export const INITIAL_CROSSROADS: Crossroad[] = [
       { id: 'tl4', phase: 30, direction: 'Завенягина' }
     ],
     roads: [
-      { id: 'r5', name: 'пр. К. Маркса (сев)', carCount: 450, pedestrianCount: 120 },
-      { id: 'r6', name: 'ул. Завенягина (вост)', carCount: 320, pedestrianCount: 60 }
-    ]
-  },
-  {
-    id: '3',
-    name: 'ул. Советская - ул. Грязнова',
-    coordinates: [53.4072, 58.9754],
-    trafficLights: [
-      { id: 'tl5', phase: 35, direction: 'Советская' },
-      { id: 'tl6', phase: 35, direction: 'Грязнова' }
-    ],
-    roads: [
-      { id: 'r7', name: 'ул. Советская', carCount: 280, pedestrianCount: 35 },
-      { id: 'r8', name: 'ул. Грязнова', carCount: 240, pedestrianCount: 25 }
+      { id: 'r5', name: 'пр. К. Маркса (сев)', carCount: 450, pedestrianCount: 120 }
     ]
   }
 ];
